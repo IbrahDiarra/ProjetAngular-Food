@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+*{
+    font-family: 'Combria', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transform: .3s linear;
+    transition: .3s linear;
+}
+
+body{
+    background-color: #e1dee9;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.5rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#f7f6f9;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:#383347;
+}
+
+section{
+    padding: 2rem;
+}
+
+
+/*...........reusable css start...........*/
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.heading span{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color: #52389b;
+}
+
+.heading h3{
+    font-size: 3rem;
+    color: #130f40;
+
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.7rem 2.8rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #f7f6f9;
+    background: linear-gradient(135deg, #494262, #6e6592);
+    border-radius: 1rem;
+}
+.btn:hover{
+    background: linear-gradient(135deg, #6e6592, #494262);
+
+}
+
+/*.........reusable css end.........*/
+
+
+
+@-webkit-keyframes fadeUp{
+    0%{
+        -webkit-transform: translateY(5rem);
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeUp{
+    0%{
+        -webkit-transform: translateY(5rem);
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+}
+
+
+/*...........footer section end..........*/
+
+/*.........responsive start .....*/
+
+@media screen and (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #menu-btn{
+        display: inline-block;
+
+    }
+    .header .navbar{
+        position: absolute;
+        top: 110%;
+        left: 0;
+        right: 0;
+        margin: 2%;
+        border-radius: 2rem;
+        background: #f7f6f9;
+        text-align: center;
+        border-bottom: 0.1rem solid rgba(0,0,0,0.2);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem;
+        display: block;
+    }
+
+    .home .home-parallax-img{
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .order form .flex .inputBox{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px)  {
+    html{
+        font-size: 50%;
+    }
+    .shopping-cart-container .cart-total .box{
+        text-align: center;
+    }
+    .shopping-cart-container .cart-total .box .btn{
+        width: 100%;
+    }
+    .home .content h3{
+        font-size: 3rem;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+/*..........responsive end.......*/
