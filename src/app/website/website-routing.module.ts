@@ -13,6 +13,7 @@ import { OrderComponent } from './order/order.component';
 import { PopularComponent } from './popular/popular.component';
 import { SearchComponent } from './search/search.component';
 import { ShoppingComponent } from './shopping/shopping.component';
+import { SiteComponent } from './site/site.component';
 
 const routes: Routes = [
   {path:'navbar', component:NavbarComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path:'popular', component:PopularComponent},
   {path:'search', component:SearchComponent},
   {path:'shopping', component:ShoppingComponent},
+  {path:'site', component:SiteComponent},
 
 ];
 
