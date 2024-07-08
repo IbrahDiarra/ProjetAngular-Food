@@ -1,0 +1,112 @@
+.banner .row-banner{
+  background: url(../../../assets/image/row-banner.png) no-repeat;
+  height: 45rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 3rem;
+  margin-bottom: 2rem;
+}
+
+.banner .row-banner .content{
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.banner .row-banner .content span{
+  font-family: 'Satisfy',cursive;
+  font-size: 4rem;
+  color: #b2601c;
+}
+
+.banner .row-banner .content h3{
+  font-size: 6rem;
+  color: #733f1b;
+  text-transform: uppercase;
+}
+
+.banner .row-banner .content p{
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  color: #b2601c;
+}
+
+.banner .row-banner .btn{
+  color: #fbf2d9;
+  border-radius: 1.2rem;
+  background: linear-gradient(135deg, #b2601c, #e5952a);
+}
+
+.banner .row-banner .btn:hover{
+  background: linear-gradient(135deg, #e5952a, #b2601c);
+
+}
+
+.banner .grid-banner{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.banner .grid-banner .grid{
+  position: relative;
+  border-radius: 3rem;
+  overflow: hidden;
+  height: 45rem;
+}
+
+.banner .grid-banner .grid:hover img{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.banner .grid-banner .grid img{
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.banner .grid-banner .grid .content{
+  position: absolute;
+  top: 2rem;
+  padding: 0 3rem;
+}
+
+.banner .grid-banner .grid .content.center{
+  text-align: center;
+  width:100%
+}
+
+.banner .grid-banner .grid .content.center span{
+  color: #f6f7f6;
+}
+
+.banner .grid-banner .grid .content.center h3{
+  color: #fff;
+}
+
+.banner .grid-banner .grid .content span{
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.banner .grid-banner .grid .content h3{
+  font-size: 3rem;
+  color: #fff;
+  padding-top: .5rem;
+}
+
+.banner .grid-banner .grid .btn{
+  border-radius: 1.3rem;
+  background: linear-gradient(135deg, #0f0b0c, #412e32);
+}
+
+.banner .grid-banner .grid .btn:hover{
+  background: linear-gradient(135deg, #412e32, #0f0b0c);
+}

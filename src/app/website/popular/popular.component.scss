@@ -1,0 +1,78 @@
+.popular{
+  padding-bottom: 5rem;
+
+
+}
+.popular .box-container{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  background: #f7f6f9;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+.popular .box-container .box{
+  border-radius: 2rem;
+  position: relative;
+  background: #edecf2;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+
+.popular .box-container .box:hover img{
+  transform: translateY(-3px);
+}
+
+.popular .box-container .box .wishlist-icon{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  color: #635985;
+  cursor: pointer;
+}
+
+.popular .box-container .box .wishlist-icon:hover{
+  color: red;
+}
+.popular .box-container .box .image{
+  margin: 1rem 0;
+}
+
+.popular .box-container .box .image img{
+  height: 15rem;
+}
+
+.popular .box-container .box .content h3{
+  font-size: 2rem;
+  color: #130f40;
+}
+
+.popular .box-container .box .content .stars{
+  padding: 1rem 0;
+  font-size: 1.7rem;
+}
+
+.popular .box-container .box .content .stars i{
+  color: gold;
+}
+
+.popular .box-container .box .content .price{
+  font-size: 2rem;
+  color: #130f40;
+}
+
+.popular .box-container .box .content .price span{
+  font-size: 1.5rem;
+  color: #494262;
+  text-decoration: line-through;
+}
+
+.popular .box-container .box .btn{
+  width: 100%;
+  border-radius: 1.3rem;
+}
